@@ -1,4 +1,65 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'terminal'
+baseURL = 'http://dannyhawkins.me/'
+languageCode = 'en-gb'
+title = 'Danny Hawkins - Personal Site'
+theme = 'hugo-coder'
+languagecode = "en"
+defaultcontentlanguage = "en"
+paginate = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Danny Hawkins"
+  info = "Software Architect, Engineer, DevOps, CTO"
+  description = "Danny's Personal Coding Space"
+  keywords = "blog,developer,personal,"
+  avatarurl = "images/avatar.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/images/favicon.svg"
+  favicon_32 = "/images/favicon32.png"
+  favicon_16 = "/images/favicon16.png"
+
+  since = 2014
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/danhawkins/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/dannyhawkins/"
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-at fa-2x"
+  weight = 2
+  url = "mailto:danny.hawkins@gmail.com"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+[[menu.main]]
+  name = "Contact"
+  weight = 3
+  url = "/"
