@@ -92,6 +92,6 @@ func setupDevProxy(e *echo.Echo) {
 
 We have a new condition in RegiserHandlers that checks if the env is dev and if so we call setupDevProxy.
 
-All this does is create a balancer group with one member (the vite dev server) and use a skipper function if the path is prefixed with /api. This keeps out api routes isolated.
+All this does is create a balancer group with one member (the vite dev server) and use a skipper function if the path is prefixed with /api. This keeps our api routes isolated.
 
 I found this to work really well so far, and the developer experience is the best I have had so far when working on fullstack web applications.
