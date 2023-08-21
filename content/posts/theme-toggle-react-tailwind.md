@@ -60,7 +60,7 @@ Replace index.css
 
 ## Create a basic layout
 
-We need a basic layout that supports dark mode remove the contents of `App.css` as we won't be needing them, and replace `App.tsx` with the following
+We need a basic layout that supports dark mode, remove the contents of `App.css` as we won't be needing them, and replace `App.tsx` with the following
 
 ```typescript
 // App.tsx
