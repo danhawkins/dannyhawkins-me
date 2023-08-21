@@ -13,6 +13,8 @@ hideComments = false
 
 I've been building a lot of projects using [React](https://react.dev/) and [TailwindCSS](https://tailwindcss.com/) recently, being a big fan of dark mode interfaces, I wanted a simple light / dark switcher for by project. When I went searching I couldn't seem to find anything simple. So I tried something myself and am fairly happy with the result.
 
+All code for this example can be found on my [github](https://github.com/danhawkins/react-tailwind-themeswitch)
+
 ## Create the app
 
 Create a react app with vite
