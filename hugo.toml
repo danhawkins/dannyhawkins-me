@@ -6,8 +6,11 @@ languagecode = "en"
 defaultcontentlanguage = "en"
 paginate = 20
 
+[params.googleTagManager]
+    id = "G-CY79NJ74DH"
+
 [markup.highlight]
-style = "github-dark"
+  style = "github-dark"
 
 [params]
   author = "Danny Hawkins"
