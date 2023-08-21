@@ -88,7 +88,7 @@ What you should be looking at now
 
 ## The theme switch component
 
-Add a new component in `src/ThemeSwitch.tsx`, our theme switch adds a couple of depedencies so lets install them also
+Add a new component in `src/ThemeSwitch.tsx`, our theme switch adds a couple of dependencies so lets install them also
 
 ```bash
 yarn add @headlessui/react @heroicons/react usehooks-ts
@@ -188,7 +188,7 @@ We're setting the body class to dark or light based on the setting
   }, [theme])
 ```
 
-We are keeping the state of the button toggle being on or off seperatly to the light dark
+We are keeping the state of the button toggle being on or off separately to the light dark
 
 ```typescript
   const [enabled, setEnabled] = useState(theme == 'light')
