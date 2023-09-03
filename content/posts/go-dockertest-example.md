@@ -174,6 +174,10 @@ func TestMain(m *testing.M) {
 
 	pg.Expire(10)
 
+	// Set this so our app can use it
+	postgresPort := pg.GetPort("5432/tcp")
+	os.Setenv("POSTGRES_PORT", postgresPort)
+
 	// Wait for the Postgres to be ready
 	if err := pool.Retry(func() error {
 		_, connErr := gorm.Open(postgres.Open(fmt.Sprintf("postgresql://postgres@localhost:%s/example", postgresPort)), &gorm.Config{})
@@ -185,10 +189,6 @@ func TestMain(m *testing.M) {
 	}); err != nil {
 		panic("Could not connect to postgres: " + err.Error())
 	}
-
-	// Set this so our app can use it
-	postgresPort := pg.GetPort("5432/tcp")
-	os.Setenv("POSTGRES_PORT", postgresPort)
 
 	code := m.Run()
 
