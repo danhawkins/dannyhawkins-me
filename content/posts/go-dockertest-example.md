@@ -44,7 +44,7 @@ We are just discussing postgres here, but some other docker services might requi
 
 ## Example
 
-I created an example project [here](https://github.com/danhawkins/go-dockertest-example) to show everything in actions, but I will work through each step I took.
+I created an example project [here](https://github.com/danhawkins/go-dockertest-example) to show everything in action, but I will work through each step I took.
 
 The project I created is very simple and the main work is in the following code:
 
@@ -102,7 +102,7 @@ func CountPeople() int {
 }
 ```
 
-So we have a method to connect, a method to create a new person record and a method to count the entries. These are all called from the main entry point
+So we have a method to connect, a method to create a new person record and a method to count the records. These are all called from the main entry point
 
 ```golang
 func main() {
