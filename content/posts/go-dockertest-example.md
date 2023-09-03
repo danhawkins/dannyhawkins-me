@@ -38,7 +38,7 @@ This is great for development, but when running integration tests, if I want a c
 - Drop and create the database as part of the integration test
 - Many other options
 
-Instead of creating some automation to drop and create databases or tables, dockertest allows us to create a completley clean isolated instance of the service, so we know every time we are starting from nothing. This follow the [cattle not pets](https://geektechstuff.com/2021/06/24/devops-what-does-cattle-not-pets-mean/) idealology from devops.
+Instead of creating some automation to drop and create databases or tables, dockertest allows us to create a completley clean isolated instance of the service, so we know every time we are starting from nothing. This follows the [cattle not pets](https://geektechstuff.com/2021/06/24/devops-what-does-cattle-not-pets-mean/) idealology from devops.
 
 We are just discussing postgres here, but some other docker services might require a LOT manual steps to get into a good condition for test runs.
 
