@@ -199,6 +199,8 @@ You may encounter challenges with SOA or microservices.
 
 ## Tooling
 
+Here are some intriguing projects I've stumbled upon recently, which could potentially mitigate the pain points of microservices:
+
 ### Service Weaver
 
 *Note: Golang only!*
