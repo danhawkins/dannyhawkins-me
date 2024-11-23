@@ -66,7 +66,7 @@ func RegisterHandlers(e *echo.Echo) {
 	e.FileFS("/", "index.html", distIndexHTML)
 	e.StaticFS("/", distDirFS)
 	// This is needed to serve the index.html file for all routes that are not /api/*
-	// neede for SPA to work when loading a specific url directly
+	// needed for SPA to work when loading a specific url directly
 	e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
 		Skipper: func(c echo.Context) bool {
 			// Skip the proxy if the prefix is /api
